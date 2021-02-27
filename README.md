@@ -10,7 +10,7 @@
 
 
 ###### - IAM Bucket Policy To Make Bucket Public 
-.
+
 ```sh
 {
     "Version": "2012-10-17",
@@ -32,7 +32,7 @@
 
 
 ##### - httpd.conf rewrite rules
-.
+
 ```sh
 
 # vim /etc/httpd/conf/httpd.conf
@@ -43,7 +43,7 @@ RewriteRule ^/images/(.*)$  https://s3.ap-south-1.amazonaws.com/YOUR-S3-BUCKET-N
 ```
 
 ##### - Copying Sample site from git
-.
+
 ```sh
 # git clone https://github.com/Fujikomalan/httpd-s3-image-rewrite.git  /tmp/samplesite
 # cp -r /tmp/samplesite/* /var/www/html/
